@@ -214,9 +214,47 @@ console.log(hassan.summary());
 */
 
 //Arrays
-for(let i=1;i<=10;i++){
+/* for(let i=1;i<=10;i++){
     console.log(`Ali has ${i} bananas`);
 }
+ */
+
+//Methods Challenge
+
+const mark = {
+    full_name: 'Mark Miller',
+    mass: 10,
+    height: 1.5,
+    
+    calcBMI : function(){
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    } 
+}
+
+
+const jhon = {
+    full_name: 'Jhon Smith',
+    mass: 55,
+    height: 1.65,
+    calcBMI : function(){
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+        
+    }
+}
+mark.calcBMI();
+jhon.calcBMI();
+console.log(mark.bmi, jhon.bmi);
+
+
+if(mark.bmi<jhon.bmi){
+    console.log(`${jhon.full_name} has more BMI`)
+}
+else if (mark.bmi>jhon.bmi){
+    console.log(`${mark.full_name} has more BMI`)
+}
+
 
 
 
