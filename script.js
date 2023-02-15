@@ -202,11 +202,15 @@ const hassan = {
     haslicense : true,
     calcage : function(birthyear){
         return 2023-this.birthyear;
+    },
+    summary : function(){
+        return `${hassan.first_name} is ${hassan.age} years old and ${hassan.haslicense ? 'has license':'doesnot have license'}`;
     }
 }
 
 
 console.log(hassan.calcage());
+console.log(hassan.summary());
 
 
 
