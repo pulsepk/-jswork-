@@ -210,15 +210,13 @@ console.log(`${jonas.name} has ${jonas.friends.length} friends and his best frie
 
 
 console.log(hassan.calcage());
-console.log(hassan.summary()); */
+console.log(hassan.summary());
+*/
 
-//For Loop
-
-for(let rep=1; rep <=10; rep++){
-    console.log(`Ali has ${rep} bananas`);
+//Arrays
+for(let i=1;i<=10;i++){
+    console.log(`Ali has ${i} bananas`);
 }
-
-
 
 
 
