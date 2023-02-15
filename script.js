@@ -194,7 +194,7 @@ console.log(`${jonas.name} has ${jonas.friends.length} friends and his best frie
 
 //15th Feb
 
-const hassan = {
+/* const hassan = {
     first_name: `Hassan`,
     last_name: `Nazar`,
     age: 21,
@@ -210,7 +210,13 @@ const hassan = {
 
 
 console.log(hassan.calcage());
-console.log(hassan.summary());
+console.log(hassan.summary()); */
+
+//For Loop
+
+for(let rep=1; rep <=10; rep++){
+    console.log(`Ali has ${rep} bananas`);
+}
 
 
 
