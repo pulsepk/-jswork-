@@ -221,7 +221,7 @@ console.log(hassan.summary());
 
 //Methods Challenge
 
-const mark = {
+/* const mark = {
     full_name: 'Mark Miller',
     mass: 10,
     height: 1.5,
@@ -230,10 +230,10 @@ const mark = {
         this.bmi = this.mass / this.height ** 2;
         return this.bmi;
     } 
-}
+} */
 
 
-const jhon = {
+/* const jhon = {
     full_name: 'Jhon Smith',
     mass: 55,
     height: 1.65,
@@ -253,8 +253,31 @@ if(mark.bmi<jhon.bmi){
 }
 else if (mark.bmi>jhon.bmi){
     console.log(`${mark.full_name} has more BMI`)
-}
+} */
 
+//Looping Arrays
+
+const Hassan = [
+    `Hassan Nazar`,
+    21,
+    ['Ali', 'Ahmed', 'Saqib'],
+]
+const types = []
+for(i=0; i<Hassan.length; i++){
+    console.log(Hassan[i], typeof Hassan[i]);
+    types.push(typeof Hassan[i]);
+}
+console.log(types);
+
+const years = ['2001', '2002', '2003']
+const age = []
+
+for(i=0;i<years.length;i++){
+    age.push(2023 - years[i]);
+    
+    
+}
+console.log(age);
 
 
 
