@@ -300,7 +300,7 @@ for(i=0; i<Hassan.length; i++){
  */
 
 //Looping Backwards
- const Hassan = [
+/*  const Hassan = [
     `Hassan Nazar`,
     `Wah`,
     21,
@@ -318,7 +318,23 @@ for(let exercise=1; exercise<4; exercise++){
         console.log(`reps done ${rep}`);
     }
 }
+ */
+
+//while loop
+let rep =1;
+while(rep!==5){
+    console.log("a");
+    rep++;
+}
 
 
- 
+let dice = Math.trunc(Math.random()*6 +1);
+
+while(dice!==6){
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random()*6 +1);
+    if (dice===6){
+        console.log("The dice is 6");
+    }
+} 
 
