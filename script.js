@@ -281,7 +281,7 @@ console.log(age); */
 
 //Break and Continue
 
-const Hassan = [
+/* const Hassan = [
     `Hassan Nazar`,
     `Wah`,
     21,
@@ -297,8 +297,27 @@ for(i=0; i<Hassan.length; i++){
     if (typeof Hassan[i] == 'number') break;
     console.log(Hassan[i], typeof Hassan[i]);
 }
+ */
 
+//Looping Backwards
+ const Hassan = [
+    `Hassan Nazar`,
+    `Wah`,
+    21,
+    ['Ali', 'Ahmed', 'Saqib'],
+]
 
+for(i=Hassan.length-1; i>=0;i--){
+    console.log(Hassan[i]);
+} 
+//Loop inside Loop
+
+for(let exercise=1; exercise<4; exercise++){
+    console.log(`-----Starting Exercise ${exercise}-----`);
+    for(let rep=1; rep<6; rep++){
+        console.log(`reps done ${rep}`);
+    }
+}
 
 
  
