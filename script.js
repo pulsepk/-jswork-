@@ -257,7 +257,7 @@ else if (mark.bmi>jhon.bmi){
 
 //Looping Arrays
 
-const Hassan = [
+/* const Hassan = [
     `Hassan Nazar`,
     21,
     ['Ali', 'Ahmed', 'Saqib'],
@@ -277,7 +277,27 @@ for(i=0;i<years.length;i++){
     
     
 }
-console.log(age);
+console.log(age); */
+
+//Break and Continue
+
+const Hassan = [
+    `Hassan Nazar`,
+    `Wah`,
+    21,
+    ['Ali', 'Ahmed', 'Saqib'],
+]
+
+for(i=0; i<Hassan.length; i++){
+    if (typeof Hassan[i] !== 'string') continue;
+    console.log(Hassan[i], typeof Hassan[i]);
+}
+
+for(i=0; i<Hassan.length; i++){
+    if (typeof Hassan[i] == 'number') break;
+    console.log(Hassan[i], typeof Hassan[i]);
+}
+
 
 
 
