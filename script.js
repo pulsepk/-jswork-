@@ -321,7 +321,7 @@ for(let exercise=1; exercise<4; exercise++){
  */
 
 //while loop
-let rep =1;
+/* let rep =1;
 while(rep!==5){
     console.log("a");
     rep++;
@@ -336,5 +336,25 @@ while(dice!==6){
     if (dice===6){
         console.log("The dice is 6");
     }
-} 
+}  */
+
+//Coding Challenge
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tips = [];
+const totals = [];
+
+const calcTip = function(bill){
+    return bill >= 50 && bill <= 300 ? bill * 0.15 :
+    bill * 0.2;
+}
+
+for(i=0;i<bills.length;i++){
+
+    calcTip(bills[i]);
+    tips.push(calcTip(bills[i]));
+    totals.push(calcTip(bills[i])+bills[i]);
+}
+console.log(tips);
+console.log(totals);
 
