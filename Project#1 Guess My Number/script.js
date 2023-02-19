@@ -5,6 +5,7 @@ document.querySelector('.message').textContent  */
 
 let random_number = Math.trunc(Math.random()*20+1);
 
+
 document.querySelector('.check').addEventListener('click', function(){
     const guess = Number(document.querySelector('.guess').value);
     document.querySelector('.number').textContent = random_number;
