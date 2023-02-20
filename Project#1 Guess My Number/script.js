@@ -5,10 +5,9 @@ document.querySelector('.message').textContent  */
 
 let random_number = Math.trunc(Math.random()*20+1);
 let score = 20;
-
+let highscore = 0;
 document.querySelector('.check').addEventListener('click', function(){
     const guess = Number(document.querySelector('.guess').value);
-    //document.querySelector('.number').textContent = random_number;
     if(!guess){
         
         document.querySelector('.message').textContent = 'No Value Entered';
@@ -17,6 +16,17 @@ document.querySelector('.check').addEventListener('click', function(){
         document.querySelector('.message').textContent = 'You have guessed right number';
         document.querySelector('body').style.backgroundColor = '#60b347';
         document.querySelector('.number').style.width = '25rem';
+        if(score>highscore){
+            highscore = score;
+            document.querySelector('.highscore').textContent = highscore;
+    
+        }
+        else if(score<highscore){
+            highscore = score;
+            document.querySelector('.highscore').textContent = highscore;
+            
+        }
+        
     }
     else if(guess>random_number){
         document.querySelector('.message').textContent = 'The guess is too high';
@@ -28,7 +38,6 @@ document.querySelector('.check').addEventListener('click', function(){
         else{
         document.querySelector('.score').textContent = 0;   
         }
-        
     }
     else if(guess<random_number){
         document.querySelector('.message').textContent = 'The guess is too low';
@@ -40,6 +49,7 @@ document.querySelector('.check').addEventListener('click', function(){
         else{
         document.querySelector('.score').textContent = 0;   
         }
+        
     }
     
 })
