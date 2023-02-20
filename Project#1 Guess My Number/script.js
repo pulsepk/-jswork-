@@ -8,7 +8,7 @@ let score = 20;
 
 document.querySelector('.check').addEventListener('click', function(){
     const guess = Number(document.querySelector('.guess').value);
-    document.querySelector('.number').textContent = random_number;
+    //document.querySelector('.number').textContent = random_number;
     if(!guess){
         
         document.querySelector('.message').textContent = 'No Value Entered';
@@ -42,4 +42,15 @@ document.querySelector('.check').addEventListener('click', function(){
         }
     }
     
+})
+
+document.querySelector('.again').addEventListener('click', function(){
+    let score = 20;
+    random_number = Math.trunc(Math.random()*20)+1;
+    document.querySelector('.message').textContent = 'Start guessing...';
+    document.querySelector('.score').textContent = score;
+    document.querySelector('.guess').value = '';
+    document.querySelector('body').style.backgroundColor = '#333';
+    document.querySelector('.number').style.width = '15rem'; 
+
 })
